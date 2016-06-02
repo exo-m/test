@@ -1,0 +1,250 @@
+.bor {
+  border: 1px solid red;
+}
+body {
+  background: #F5F5F5;
+  position: relative;
+}
+.long-shadow {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 25px;
+  border: none;
+  font: normal 60px/1 "Fredoka One", Helvetica, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 3px 3px 0 #0199d9 , 4px 4px 0 #0199d9 , 5px 5px 0 #0199d9 , 6px 6px 0 #0199d9 , 7px 7px 0 #0199d9 , 8px 8px 0 #0199d9 , 9px 9px 0 #0199d9 , 10px 10px 0 #0199d9 , 11px 11px 0 #0199d9 , 12px 12px 0 #0199d9 , 13px 13px 0 #0199d9 , 14px 14px 0 #0199d9 , 15px 15px 0 #0199d9 , 16px 16px 0 #0199d9 , 17px 17px 0 #0199d9 , 18px 18px 0 #0199d9 , 19px 19px 0 #0199d9 , 20px 20px 0 #0199d9 ;
+}
+.neon-text {
+  background: #2B2B2B;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  height: 90px;
+  font: normal normal bold 72px normal "Atomic Age", Helvetica, sans-serif;
+  color: #407ec4;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 #4da2fc, -1px -1px 0 #4da2fc, 1px -1px 0 #4da2fc, -1px 1px 0 #4da2fc, 4px 4px 8px #2c5889, -4px 4px 8px #2c5889, 4px -4px 8px #2c5889, -4px -4px 8px #2c5889;
+  -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.neon-text:hover {
+  text-shadow: 1px 1px 0 #4da2fc, -1px -1px 0 #4da2fc, 1px -1px 0 #4da2fc, -1px 1px 0 #4da2fc;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+#container {
+  overflow: hidden;
+  width: 1200px;
+  margin: 30px auto 100px;
+}
+#container .game-container {
+  width: 400px;
+  float: left;
+}
+#container .game-container .recode {
+  width: 100%;
+  overflow: hidden;
+}
+#container .game-container .recode p {
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+  color: #333;
+  font-weight: 600;
+}
+#container .game-container .xs-singer {
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+#container .game-container .xs-singer img.xs {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fcc;
+}
+#container .game-container .xs-singer .control {
+  width: 80px;
+  float: left;
+  margin: 20px 50px;
+}
+#container .game-container .xs-singer .control a.btn {
+  width: 80px;
+  display: block;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  background: #0c6;
+}
+#container .game-container .xs-singer .control a.repeat {
+  margin-top: 10px;
+}
+#container .game-container .game-wrap {
+  width: 100%;
+  height: 400px;
+}
+#container .game-container .game-wrap ul.game-ul {
+  width: 100%;
+  height: 100%;
+}
+#container .game-container .game-wrap ul.game-ul li {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#container .game-container .game-wrap ul.game-ul li img {
+  width: 100%;
+  height: 100%;
+}
+#container .swiper-container {
+  float: left;
+  width: 200px;
+  height: 700px;
+  margin: 0 40px;
+  border-right: 5px solid #666;
+  border-left: 5px solid #666;
+}
+#container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.3);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#container .swiper-slide ul.swiper-ul {
+  height: 100%;
+  width: 100%;
+}
+#container .swiper-slide ul.swiper-ul li {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12px auto 0;
+  border: 5px solid #fcc;
+}
+#container .swiper-slide ul.swiper-ul li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#container .profess {
+  float: right;
+  width: 500px;
+}
+#container .profess .wrap {
+  width: 500px;
+  height: 570px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  color: #f00;
+  text-align: center;
+  line-height: 30px;
+}
+#container .profess .bot {
+  width: 500px;
+  height: 40px;
+  position: relative;
+}
+#container .profess .bot span.left {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  position: relative;
+  float: left;
+  background: #E8E3E3;
+  border-radius: 4px 0 0 4px;
+  font-size: 12px;
+  text-indent: 20px;
+  cursor: pointer;
+}
+#container .profess .bot span.left font {
+  background-color: #f00;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: block;
+  border: 1px solid #000;
+}
+#container .profess .bot p.input {
+  outline: none;
+  width: 320px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  background: #fff;
+}
+#container .profess .bot span.right {
+  cursor: pointer;
+  width: 100px;
+  background: #E73030;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  float: left;
+  display: block;
+  font-size: 12px;
+  border-radius: 0 4px 4px 0;
+}
+#container .profess .bot ul {
+  position: absolute;
+  left: 0;
+  bottom: 38px;
+  display: none;
+}
+#container .profess .bot ul li {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+  cursor: pointer;
+  background: #E8E3E3;
+  list-style-type: none;
+  font-size: 12px;
+  position: relative;
+}
+#container .profess .bot ul li font {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: block;
+  border: 1px solid #000;
+}

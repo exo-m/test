@@ -1,0 +1,225 @@
+#banner {
+  width: 1000px;
+  height: 420px;
+  margin: 20px auto;
+  position: relative;
+  perspective: 1000px;
+}
+#banner ul li {
+  list-style-type: none;
+  transform-style: preserve-3d;
+  height: 420px;
+  float: left;
+  position: relative;
+  transform: translateZ(-210px);
+}
+#banner ul li div {
+  position: absolute;
+  height: 420px;
+}
+#banner ul li div:nth-child(1) {
+  bottom: 420px;
+  transform-origin: bottom;
+  transform: translateZ(210px) rotateX(90deg);
+  background: url(http://img1.yytcdn.com/others/admin/151118/0/-M-4fbf309e864368ddba82752ffc3fccf7_0x0.jpg) center;
+  background-size: cover;
+}
+#banner ul li div:nth-child(2) {
+  top: 420px;
+  transform-origin: top;
+  transform: translateZ(210px) rotateX(-90deg);
+  background: url(http://img1.yytcdn.com/others/admin/151118/0/1447834639952_1600x600.jpg) center;
+  background-size: cover;
+}
+#banner ul li div:nth-child(3) {
+  transform: translateZ(210px);
+  background: url(http://img0.yytcdn.com/others/admin/151118/0/-M-1b745f5a7d048782ccb79a8867b30750_0x0.jpg) center;
+  background-size: cover;
+}
+#banner ul li div:nth-child(4) {
+  transform: translateZ(-210px) rotateX(180deg);
+  background: url(http://img3.yytcdn.com/others/admin/151114/0/-M-326fac58638a869bcf483a6064edd8f6_0x0.jpg) center;
+  background-size: cover;
+}
+#banner ol {
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+#banner ol li {
+  list-style-type: none;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+  float: left;
+  background: #000;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "微软雅黑";
+}
+#banner ol li.active {
+  background: #f00;
+}
+.show-container {
+  width: 1000px;
+  margin: 20px auto;
+}
+.show-container h3 {
+  font-size: 2em;
+  color: #F0831A;
+  width: 250px;
+  text-indent: 10px;
+  margin-left: 15px;
+  border-bottom: 5px solid #0DAD51;
+}
+.show-container .show-list {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+}
+.show-container .show-list li {
+  width: 220;
+  float: left;
+  margin: 0 15px;
+}
+.show-container .show-list li div {
+  width: 200px;
+  padding: 10px;
+  margin: 10px auto;
+  box-shadow: 0 0 5px #000;
+}
+.show-container .show-list li div img {
+  width: 200px;
+  height: auto;
+}
+.show-container .show-list li div p {
+  width: 100px;
+  margin: 15px auto 0;
+}
+.show-container .show-list li div p i {
+  margin-right: 10px;
+  float: left;
+  width: 22px;
+  height: 20px;
+  background: url(../images/icon_sprite.png) no-repeat;
+  background-position: -111px -140px;
+}
+.show-container .show-list li div p span {
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 0 4px;
+  float: left;
+  color: #666;
+}
+.show-container .jz {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: 5px;
+  cursor: pointer;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  margin-top: 20px;
+}
+.show-container .jz img.jz-pic {
+  width: 88px;
+  height: 30px;
+  margin: 10px auto;
+}
+#carBar {
+  width: 40px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  display: none;
+}
+#carBar .car {
+  width: 40px;
+  height: 100%;
+  background: #f99;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#carBar .carTxt {
+  width: 220px;
+  height: 100%;
+  background: #ddd;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#carBar .car .join {
+  background: #963;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.carTxt ul {
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  list-style: none;
+}
+.carTxt ul li {
+  position: relative;
+  margin-top: 10px;
+  width: 90%;
+  height: 250px;
+  padding: 0 5% 10px;
+  border-bottom: 1px solid #fff;
+}
+.carTxt ul li img {
+  width: 100%;
+  height: 250px;
+}
+.carTxt ul li a {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  right: 1px;
+  top: -8px;
+  display: none;
+}
+.flyer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+}
+#tip {
+  position: fixed;
+  top: 260px;
+  right: 50px;
+  z-index: 10000;
+  width: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: #360;
+  display: none;
+}

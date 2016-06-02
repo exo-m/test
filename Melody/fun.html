@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>乐了趣</title>
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/basic.css"/>
+	<link rel="stylesheet" href="css/nav.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/fun.css">
+</head>
+<body>
+	<!-- 导航部分 -->
+	<nav>
+		<div class="nav">
+			<div class="menu">
+				<ul class="clearfix">
+					<li data-Name="do"><a href="index.html">首页</a><span></span></li>					
+					<li data-Name="re"><a href="bd.html">榜单</a><span></span></li>
+					<li data-Name="mi"><a href="hotpic.html">热图</a><span></span></li>
+					<li data-Name="fa"><a href="zb.html">直播</a><span></span></li>
+					<li data-Name="sol"><a href="fun.html">乐了趣</a><span></span></li>
+					<li data-Name="la"><a href="play_music.html">播放器</a><span></span></li>
+					<li data-Name="si" class="mv-new">
+						<a href="mv.html">MV</a>
+						<span></span>
+						<img src="images/topbar-new.png" alt=""/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--导航音乐键-->
+	<div style="display:none">
+		<audio src="mp3/do.mp3" controls="controls" id="MusicAudio"></audio>
+	</div>
+	
+	<div id="container" class="clearfix">
+		<!-- 明星来找茬 -->
+		<div class="game-container">
+			<div class="long-shadow">明星来找茬</div>
+			<div class="recode"><p class="time">剩余时间：<span></span>秒</p><p class="score">分数：<span ></span></p></div>
+			<div class="xs-singer clearfix">
+				<img src="images/show-8.jpg" class="xs xs1" alt="">
+				<div class="control">
+					<a href="javascript:void(0)" class="btn play">开始</a>
+					<a href="javascript:void(0)" class="btn repeat">重来</a>
+				</div>
+				<img src="images/show-21.jpg" class="xs xs2" alt="">
+			</div>
+			<div class="game-wrap">
+				<ul class="game-ul clearfix">
+					<li><img src="images/show-21.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 选择明星区 -->
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<ul class="swiper-ul">
+	            		<li><img src="images/show-8.jpg" alt=""></li>
+	            		<li><img src="images/show-20.jpg" alt=""></li>
+	            		<li><img src="images/show-3.jpg" alt=""></li>
+	            		<li><img src="images/new-music-8.jpg" alt=""></li>
+	            	</ul>
+	            </div>
+	            <div class="swiper-slide">
+	            	<ul class="swiper-ul">
+	            		<li><img src="images/show-11.jpg" alt=""></li>
+	            		<li><img src="images/show-17.jpg" alt=""></li>
+	            		<li><img src="images/show-5.jpg" alt=""></li>
+	            		<li><img src="images/game-1.jpg" alt=""></li>
+	            	</ul>
+	            </div>
+	            <div class="swiper-slide">
+	            	<ul class="swiper-ul">
+	            		<li><img src="images/show-11.jpg" alt=""></li>
+	            		<li><img src="images/show-17.jpg" alt=""></li>
+	            		<li><img src="images/show-5.jpg" alt=""></li>
+	            		<li><img src="images/game-1.jpg" alt=""></li>
+	            	</ul>
+	            </div>
+	            <div class="swiper-slide">
+	            	<ul class="swiper-ul">
+	            		<li><img src="images/show-8.jpg" alt=""></li>
+	            		<li><img src="images/show-20.jpg" alt=""></li>
+	            		<li><img src="images/show-3.jpg" alt=""></li>
+	            		<li><img src="images/game-2.jpg" alt=""></li>
+	            	</ul>
+	            </div>
+	            <div class="swiper-slide">
+	            	<ul class="swiper-ul">
+	            		<li><img src="images/show-8.jpg" alt=""></li>
+	            		<li><img src="images/show-20.jpg" alt=""></li>
+	            		<li><img src="images/show-3.jpg" alt=""></li>
+	            		<li><img src="images/new-music-8.jpg" alt=""></li>
+	            	</ul>
+	            </div>
+	            <div class="swiper-slide">
+	            	<ul class="swiper-ul">
+	            		<li><img src="images/show-8.jpg" alt=""></li>
+	            		<li><img src="images/show-20.jpg" alt=""></li>
+	            		<li><img src="images/show-3.jpg" alt=""></li>
+	            		<li><img src="images/new-music-8.jpg" alt=""></li>
+	            	</ul>
+	            </div>
+	        </div>
+	    </div>
+		<!-- 表白区 -->
+		<div class="profess">
+			<div class="neon-text">表白墙</div>
+			<div class="wrap"></div>
+			<div class="bot clearfix">
+				<span class="left">颜色 <font></font></span>
+				<p contenteditable="true" class="input"></p>
+				<span class="right">清空再写</span>
+				<ul>
+					<li data-color="#F01EC6">颜色<font style="background-color:#F01EC6"></font></li>
+					<li data-color="#ff0000" class="xz">颜色<font style="background-color:#ff0000"></font></li>
+					<li data-color="#50BE2A">颜色<font style="background-color:#50BE2A"></font></li>
+					<li data-color="#ffffff">颜色<font style="background-color:#ffffff"></font></li>
+					<li data-color="#DFDD48">颜色<font style="background-color:#DFDD48"></font></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<audio src="mp3/4-walls.mp3" autoplay></audio>
+	<!-- 底部 -->
+	<footer>
+		<div class="footer">
+			<a href="#">意见反馈</a> | <a href="#">帮助中心</a> | <a href="#">资源合作开放平台</a> | <a href="#">原创音乐人</a> | <span>©2015 Baidu</span> <a href="#">使用melody前必读</a> <span>文网文[2010]197号</span>
+		</div>
+		<p class="connect-bot">
+			<a href="http://weibo.com/u/3381888390" target="_blank" class="wb gz">加关注</a>
+			<a href="#" class="wx gz">加微信好友</a>
+			<span class="ewm"></span>
+		</p>
+	</footer>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/fun.js"></script>
+</body>
+</html>

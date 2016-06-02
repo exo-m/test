@@ -1,0 +1,48 @@
+#wrap{width:100%;height:100%;background:rgba(0,0,0,.5);position:fixed;
+	top:0;left:0;display:none;z-index: 9999;}
+#Login{width:600px;height:450px;position:absolute;top:150px;left:400px;
+	background:#fff;box-shadow:0 0 10px #fff;display:none;}
+.banner-login{width:600px;height:45px;background:#f93;color:#fff;font-size:20px;line-height:45px;text-indent:35px;cursor:move;}
+.banner-login a{float:right;margin-right:14px;font-size:24px;color:#ddd;
+		text-decoration:none;}
+.banner-login a:hover{color:#fff;}
+#Login p.info{color:#666;font-size:1.2em;margin:20px;}
+#Login p.info img{display: inline-block;}
+#Login #lg{width:315px;height:190px;margin:0 auto;}
+#lg p{font-size:16px;margin-bottom:20px;}
+#lg p input.txt{width:260px;height:35px;border:1px solid #ddd;border-radius:3px;}
+#lg p.con{width:260px;margin-left:36px;font-size:12px;line-height:20px;}
+#lg p.con a{float:right;}
+#lg p.con input{vertical-align:middle;}
+#lg p input.but{width:263px;margin-left:35px;background:url("../images/but_bg1.jpg");height:40px;border:0;}
+span.xs{cursor:pointer;}
+#lg .yzm{
+	width: 100%;
+	height: 30px;
+}
+#lg .yzm p{
+	width: 156px;
+	height: 30px;
+	float: left;
+}
+#lg .yzm p label{
+	line-height: 30px;
+}
+#yzmInput{
+	height: 26px;
+	width: 60px;
+	outline: none;
+	border: 1px solid #ccc;
+}
+.flash{
+	padding: 2px 5px;
+	float: left;
+	font-size: 14px;
+	margin: 3px 0 0 5px;
+	background: #ddd;
+	color: #666;
+	outline: none;
+}
+.codeImg{
+	float: left;
+}

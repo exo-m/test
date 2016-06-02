@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>听音乐，用Melody</title>
+	<!--<link rel="stylesheet" href="css/idangerous.swiper.css" />-->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/basic.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/nav.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<header>
+		<div class="headerWrap clearfix">
+			<a href="#" class="logo"><img src="images/logo.jpg" width="120" height="60"/></a>
+			<div class="logo-txt enjoy-css">Melody</div>
+			<div class="user-wrap">
+				<a href="javascript:void(0)">注册</a>|
+				<a href="javascript:void(0)" id="login">登录</a>|
+				<a href="javascript:void(0)">充值</a>|
+				<a href="javascript:void(0)">会员</a>
+			</div>
+			<div class="header-search">
+				<input type="text" class="search" placeholder="热搜：林俊杰">
+				<a href="#" class="search-btn"></a>
+				<!--搜索内容-->
+				<ul class="searchCon"></ul>
+			</div>
+			<!-- 下载 -->
+			<div class="connect">
+				<p class="download">
+					<a href="#" class="an">Android下载</a>
+					<a href="#" class="ios">Ios下载</a>
+				</p>
+			</div>
+		</div>
+	</header>
+	<!-- 登录 -->
+	<div id="wrap">
+		<div id="Login">
+			<div class="banner-login">用户登录<a href="" class="close">X</a></div>
+			<p class="info"><img src="images/new.png" width="40" height="40" align="absmiddle">Melody 给你带来不一样的感觉，铸造你内心的一方净土！Come on , High 起来~</p>
+			<div id="lg">
+				<form>
+					<p>账号 <input type="text" class="txt"></p>
+					<p>密码 <input type="password" class="txt"></p>
+					<p class="con">
+						<label>
+							<input type="checkbox">下次自动登录
+						</label>
+						<a href="https://passport.baidu.com/?getpassindex&tt=1439288914832&gid=8E9E98C-6A4D-494E-86FF-21C7F9DA33E5&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F">忘记密码</a>
+					</p>
+					<div class="yzm">
+						<p>
+							<label for="yzmInput">验证码：
+								<input type="text" id="yzmInput">
+							</label>
+						</p>
+						<p>
+							<img class="codeImg" width="80" height="30" src="code.php" alt="">
+							<button class="flash" type="button">换一张</button>
+						</p>
+					</div>
+					<p><input type="submit" class="but" value=""></p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<nav>
+		<div class="nav">
+			<div class="menu">
+				<ul class="clearfix">
+					<li data-Name="do"><a href="index.html">首页</a><span></span></li>					
+					<li data-Name="re"><a href="bd.html">榜单</a><span></span></li>
+					<li data-Name="mi"><a href="hotpic.html">热图</a><span></span></li>
+					<li data-Name="fa"><a href="zb.html">直播</a><span></span></li>
+					<li data-Name="sol"><a href="fun.html">乐了趣</a><span></span></li>
+					<li data-Name="la"><a href="play_music.html">播放器</a><span></span></li>
+					<li data-Name="si" class="mv-new">
+						<a href="mv.html">MV</a>
+						<span></span>
+						<img src="images/topbar-new.png" alt=""/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--导航音乐键-->
+	<div style="display:none">
+		<audio src="mp3/do.mp3" controls="controls" id="MusicAudio"></audio>
+	</div>
+	<!--大图轮播-->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+      		<!--遮罩层-->
+			<div class="gray-left gray"></div>
+			<div class="gray-right gray"></div>
+			<!--按钮-->
+			<img src="images/prev.png" class="btn prev" alt="" />
+			<img src="images/next.png" class="btn next" alt="" />
+			<!--滚动图片-->
+			<div class="banner-top clearfix">
+				<a href="http://v.yinyuetai.com/video/2412720?f=SY-JDT-MV-3" target="_blank"><img src="http://img0.yytcdn.com/others/admin/151116/0/-M-a4c1a71fe52bc078601bfa14214c7fd8_0x0.jpg" alt="" /></a>
+				<a href="http://feature.yinyuetai.com/inventory2?id=57%20&f=SY-JDT-YDM-4" target="_blank"><img src="http://img2.yytcdn.com/others/admin/151113/0/-M-9920b3a1bfc3b92f0345f0bf506b1885.jpg" alt="" /></a>
+				<a href="http://v.yinyuetai.com/video/2412566?f=SY-JDT-MV-5" target="_blank"><img src="http://img1.yytcdn.com/others/admin/151110/0/-M-ef78f300a8374f55066ddcc3f741b80d_0x0.jpg" alt="" /></a>
+				<a href="http://v.yinyuetai.com/video/2412856?f=SY-JDT-MV-6" target="_blank"><img src="http://img1.yytcdn.com/others/admin/151021/0/-M-088f089aaff61fed21569403e2f35b09_0x0.jpg" alt="" /></a>
+				<a href="http://feature.yinyuetai.com/SJ10YEARS?f=SY-JDT-YDM-8" target="_blank"><img src="http://img4.yytcdn.com/others/admin/151110/0/-M-5f7c49d8556daf6ae4371fb7ede90492_0x0.jpg" alt="" /></a>
+			</div>
+			<!--点点-->
+			<div class="banner-btn">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+    </div>
+	<!--新碟推荐-->
+	<div class="new-music-wrap">
+		<div class="new-music-top clearfix">
+			<h1 class="icon-music-tb">新碟推荐</h1>
+			<div class="new-music-top-list">
+				<span class="new-active">热门</span>|
+				<span>华语</span>|
+				<span>欧美</span>|
+				<span>日本</span>|
+				<span>韩国</span>
+			</div>
+		</div>
+		<div class="new-music-bot">
+			<ul class="clearfix new-show-active">
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-1.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>你为什么离开我</p>
+						<span>黄品源</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-2.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>好想你</p>
+						<span>林宥嘉</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-3.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>花好月圆</p>
+						<span>邓丽君</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-4.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>桃花开</p>
+						<span>欢子</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-5.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>喜欢你</p>
+						<span>六哲</span>
+					</a></li>
+			</ul>
+			<ul class="clearfix">
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-7.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>放开我</p>
+						<span>黄源</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-8.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>Grow</p>
+						<span>EXO-M</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-9.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>光滑之门</p>
+						<span>圭贤</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-11.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>甜甜的我</p>
+						<span>周杰伦</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-10.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>如果我</p>
+						<span>小甜心</span>
+					</a></li>
+			</ul>	
+			<ul class="clearfix">
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-4.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>离开我</p>
+						<span>李晓春</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-6.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>一夜</p>
+						<span>坤源</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-5.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>show me</p>
+						<span>sisiter</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-9.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>心跳</p>
+						<span>王心凌</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-10.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>十分想要</p>
+						<span>林俊如</span>
+					</a></li>
+			</ul>	
+			<ul class="clearfix">
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-3.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>为什么离开</p>
+						<span>石原</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-5.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>你我</p>
+						<span>SM源</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-3.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>告诉你</p>
+						<span>JJ</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-4.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>豆浆油条</p>
+						<span>林俊杰</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-11.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>朋友</p>
+						<span>黄建</span>
+					</a></li>
+			</ul>	
+			<ul class="clearfix">
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-11.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>Why我</p>
+						<span>张俊以</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-8.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>						
+						<p>fuck you</p>
+						<span>Mirron 5</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-4.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>咬你</p>
+						<span>Super junior</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-10.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>LAY</p>
+						<span>EXO-M</span>
+					</a></li>
+				<li><a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=10562223&__o=song/10562223||playBtn&fr=-1||www.hao123.com#" target="_blank">
+						<div class="new-music-mask"><img src="images/new-music-5.jpg" alt="" width="200" height="200" />
+							<div class="play-mask">
+								<span class="play iconfont">&#xe6e8;</span>
+							</div>
+						</div>
+						<p>千里之外</p>
+						<span>费玉清</span>
+					</a>
+				</li>
+			</ul>		
+		</div>
+	</div>
+	<!--歌单推荐-->
+	<div class="singer-container clearfix">
+		<div class="singer-wrap">
+			<div class="singer-top top">
+				<h1 class="icon-music-tb">歌手</h1>
+				<a href="javascript:void(0)" class="pattern-more">换一批<span>></span></a>
+			</div>
+			<div class="singer-bot">
+				<ul class="singer-list">
+					<li class="clearfix">
+						<h2 class="singer-type">内地歌手</h2>
+						<div class="singer-name-list">
+							<a href="#" class="singer-name"><span>陈奕迅</span></a>
+							<a href="#" class="singer-name"><span>周杰伦</span></a>
+							<a href="#" class="singer-name blink"><span>张学友</span></a>
+							<a href="#" class="singer-name"><span>金志文</span></a>
+							<a href="#" class="singer-name"><span>张国荣</span></a>
+							<a href="#" class="singer-name"><span>汪峰</span></a>
+							<a href="#" class="singer-name blink"><span>刀郎</span></a>
+							<a href="#" class="singer-name"><span>李建</span></a>
+							<a href="#" class="singer-name"><span>DJ小可</span></a>
+							<a href="#" class="singer-name"><span>张国荣</span></a>
+							<a href="#" class="singer-name"><span>汪峰</span></a>
+							<a href="#" class="singer-name blink"><span>刀郎</span></a>
+							<a href="#" class="singer-name"><span>刘德华</span></a>
+							<a href="#" class="singer-name blink">更多<span>》</span></a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2 class="singer-type gt">港台歌手</h2>
+						<div class="singer-name-list">
+							<a href="#" class="singer-name blink"><span>周杰伦</span></a>
+							<a href="#" class="singer-name"><span>王菲</span></a>
+							<a href="#" class="singer-name"><span>邓丽君</span></a>
+							<a href="#" class="singer-name"><span>孙露</span></a>
+							<a href="#" class="singer-name"><span>张碧晨</span></a>
+							<a href="#" class="singer-name"><span>那英</span></a>
+							<a href="#" class="singer-name"><span>许茹芸</span></a>
+							<a href="#" class="singer-name"><span>莫文蔚</span></a>
+							<a href="#" class="singer-name"><span>邓丽君</span></a>
+							<a href="#" class="singer-name"><span>孙露</span></a>
+							<a href="#" class="singer-name"><span>张碧晨</span></a>
+							<a href="#" class="singer-name"><span>那英</span></a>
+							<a href="#" class="singer-name"><span>G.E.M</span></a>
+							<a href="#" class="singer-name blink">更多<span>》</span></a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2 class="singer-type rh">日韩歌手</h2>
+						<div class="singer-name-list">
+							<a href="#" class="singer-name"><span>EXO</span></a>
+							<a href="#" class="singer-name"><span>Bigbang</span></a>
+							<a href="#" class="singer-name"><span>少女时代</span></a>
+							<a href="#" class="singer-name blink"><span>sister</span></a>
+							<a href="#" class="singer-name"><span>圭贤</span></a>
+							<a href="#" class="singer-name"><span>BTOB</span></a>
+							<a href="#" class="singer-name"><span>鸟叔</span></a>
+							<a href="#" class="singer-name blink"><span>superjunior</span></a>
+							<a href="#" class="singer-name"><span>久让石</span></a>
+							<a href="#" class="singer-name"><span>少女时代</span></a>
+							<a href="#" class="singer-name blink"><span>sister</span></a>
+							<a href="#" class="singer-name"><span>圭贤</span></a>
+							<a href="#" class="singer-name"><span>李闰珉</span></a>
+							<a href="#" class="singer-name"><span>李敏镐</span></a>
+							<a href="#" class="singer-name blink">更多<span>》</span></a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2 class="singer-type om">欧美歌手</h2>
+						<div class="singer-name-list">
+							<a href="#" class="singer-name"><span>Madonna</span></a>
+							<a href="#" class="singer-name blink"><span>Avril Lavigne</span></a>
+							<a href="#" class="singer-name"><span>Britney Spears</span></a>
+							<a href="#" class="singer-name"><span>Mariah Carey</span></a>
+							<a href="#" class="singer-name"><span>Janet Jackson</span></a>
+							<a href="#" class="singer-name"><span>Fergie</span></a>
+							<a href="#" class="singer-name blink"><span>Avril Lavigne</span></a>
+							<a href="#" class="singer-name"><span>Britney Spears</span></a>
+							<a href="#" class="singer-name blink">更多<span>》</span></a>
+						</div>
+					</li>
+					<li class="clearfix">
+						<h2 class="singer-type qt">其他歌手</h2>
+						<div class="singer-name-list">
+							<a href="#" class="singer-name"><span>12 Kelis</span></a>
+							<a href="#" class="singer-name"><span> 帕丽斯·希尔顿</span></a>
+							<a href="#" class="singer-name"><span>小野猫</span></a>
+							<a href="#" class="singer-name"><span>孙丹菲</span></a>
+							<a href="#" class="singer-name blink"><span>严正花</span></a>
+							<a href="#" class="singer-name"><span>2ne1</span></a>
+							<a href="#" class="singer-name blink">更多<span>》</span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="hot-container">
+			<div class="hot-notice-top">
+				<div class="notice-top top">
+					<h1 class="icon-music-tb">热门榜单</h1>
+					<a href="#" class="pattern-more">更多<span>></span></a>
+				</div>
+				<a href="#"><img src="images/bang_img_01.png" alt="" class="hot-pic"></a>
+				<a href="#"><img src="images/bang_img_02.png" alt="" class="hot-pic"></a>
+			</div>
+			<div class="hot-goethe-bot">
+				<div class="goethe-top top">
+					<h1 class="icon-music-tb">热门歌单</h1>
+					<a href="#" class="pattern-more">更多<span>></span></a>
+				</div>
+				<div class="goethe-bot">
+					<a href="#"><img src="images/goethe-1.jpg" alt=""></a>
+					<a href="#"><img src="images/goethe-2.jpg" alt=""></a>
+					<a href="#"><img src="images/goethe-3.jpg" alt=""></a>
+					<a href="#"><img src="images/goethe-4.jpg" alt=""></a>
+					<a href="#"><img src="images/goethe-5.jpg" alt=""></a>
+					<span class="hot-arrow hot-arrow-left"></span>
+					<span class="hot-arrow hot-arrow-right"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--榜单-->
+	<div class="pattern-wrap clearfix">
+		<div class="pattern-one pattern">
+			<div class="pattern-one-top clearfix pattern-top">
+				<h1 class="icon-music-tb nd">内地榜</h1>
+				<img src="images/dance.gif" alt="" class="music-rate"/>
+				<a href="#" class="pattern-more">更多<span>></span></a>				
+			</div>
+			<div class="pattern-one-bot pattern-bot">
+				<ul class="pattern-list">
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>1.我们相爱过--黄子韬</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>2.再见--邓紫棋</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>3.夏洛特烦恼--金志文</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>4.大梦想家--TFBOYS</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>5.年轮--张碧晨</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>6.小葡萄--正月十五</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>7.山河故人--李宇春</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>8.一次就好--马丽</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="pattern-two pattern">
+			<div class="pattern-two-top clearfix pattern-top">
+				<h1 class="icon-music-tb rh">日韩榜</h1>
+				<img src="images/dance.gif" alt="" class="music-rate"/>
+				<a href="#" class="pattern-more">更多<span>></span></a>				
+			</div>
+			<div class="pattern-two-bot pattern-bot">
+				<ul class="pattern-list">
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>1.마음--IU</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>2.Loser--bigbang</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>3.上瘾--EXO</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>4.我们相爱过--圭贤</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>5.shake it--sister</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>6.put up your hands--Shinee</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>7.mamacita--superjunior</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>8.the boys--少女时代</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="pattern-three pattern">
+			<div class="pattern-three-top clearfix pattern-top">
+				<h1 class="icon-music-tb om">欧美榜</h1>
+				<img src="images/dance.gif" alt="" class="music-rate"/>
+				<a href="#" class="pattern-more">更多<span>></span></a>				
+			</div>
+			<div class="pattern-three-bot pattern-bot">
+				<ul class="pattern-list">
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>1.you are mine--walsd</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>2.say you goodbyb--Motool</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>3.HEY GIRL--Maroon 5</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>4.Let's do it--Shokyou</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>5.live as you can--Arilla</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>6.as long as so--Popuple</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>7.love is simple--Grow-D</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+					<li>
+						<a href="http://play.baidu.com/?__m=mboxCtrl.playSong&__a=247911654&__o=song/247911654||playBtn&fr=-1||www.hao123.com#" target="_blank">
+							<div>8.I am a single--Junior-pop</div>							
+						</a>
+						<p class="clearfix">
+							<a href="#" class="pattern-play iconfont">&#xe6e8;</a>
+							<a href="#" class="like"></a>
+							<a href="#" class="repeat"></a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--MV推荐-->
+	<div class="mv-wrap">
+		<div class="mv-top top clearfix">
+			<h1 class="icon-music-tb">MV</h1>
+			<img src="images/mv-video-1.gif" alt="" class="mv-video">
+			<a href="#" class="pattern-more">更多<span>></span></a>
+		</div>
+		<div class="mv-bot">
+			<div class="mv-container">
+				<div class="mv-left">
+					<a href="http://v.yinyuetai.com/video/2412102?f=SY-FSJJ-list-12" target="_blank" class="mv-big"><img src="images/mv-first.jpg" alt="" /></a>
+					<div class="mv-txt-wrap">
+						<a href="#" class="mv-txt-header">吴亦凡音悦Tai饭团庆生特别企划：Step By Step</a>
+						<p class="mv-txt-detail">
+							Step By Step 每一步都是不懈努力的脚步 每一步都是创造奇迹的脚步 每一步都是勾画美好的脚步 而每一步也有不离不弃的妮妮陪伴在左右 不断的打磨只会让你变得更加优秀 频生亦顾心相悦，吴音执手伴凡辰 吴亦凡2015年11月6日 世界的每个你把最美好的生日祝福送给最爱的你
+						</p>	
+					</div>				
+				</div>
+				<div class="mv-right clearfix">
+					<div>
+						<a href="http://v.yinyuetai.com/video/2410483?f=SY-FSJJ-list-6" target="_blank" class="mv-show">
+							<img src="http://img4.yytcdn.com/video/mv/151112/2417686/-M-6aaa8deb849ea033e363dc1e80584095_240x135.jpg" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2410483?f=SY-FSJJ-list-6" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+						<img src="images/ico_hd27.png" alt="" class="mv-porpety">
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2374472" target="_blank" class="mv-show">
+							<img src="http://img4.yytcdn.com/video/mv/151116/2418543/-M-e55a0ce610b04795ef248fadde187e0e_240x135.jpg?t=20151113101710" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2374472" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2046780" target="_blank" class="mv-show">
+							<img src="http://img3.yytcdn.com/video/mv/151111/2417392/-M-d061b3abe7b30dcb3254ea3682da3f32_240x135.jpg?t=20151111212350" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2046780" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+						<img src="images/ico_sh.png" alt="" class="mv-porpety">
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2410065" target="_blank" class="mv-show">
+							<img src="http://img1.yytcdn.com/video/mv/151014/2394240/-M-7eb93ac871faaccb1b1de5f074b18b1a_240x135.png?t=20151014173828" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2410065" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+						<img src="images/ico_hd27.png" alt="" class="mv-porpety">
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2371827" target="_blank" class="mv-show">
+							<img src="http://img3.yytcdn.com/video/mv/151014/2394034/-M-ce0d799d4a4b7d2693b63706da5d0c07_240x135.jpg?t=20151014123518" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2371827" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+					</div>
+					<div>
+						<a href="#" class="mv-show mv-load">
+							<img src="images/loading.gif" alt="" />			
+						</a>
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-show">
+							<img src="http://img1.yytcdn.com/video/mv/151103/2409928/-M-5ec962705a37dc6645048b9ede6e1dc5_240x135.jpg?t=20151103094136" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-show">
+							<img src="http://img0.yytcdn.com/video/mv/151111/2416894/-M-c9f3156eb8fc6d278b0260f02f6dd53a_240x135.jpg?t=20151111100507" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+						<img src="images/ico_sh.png" alt="" class="mv-porpety">
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-show">
+							<img src="http://img2.yytcdn.com/video/mv/151016/2395484/-M-ce1a89f2d8a4595bbf8913cdee144d30_240x135.jpg?t=20151016110453" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-show">
+							<img src="http://img0.yytcdn.com/video/mv/151111/2416894/-M-c9f3156eb8fc6d278b0260f02f6dd53a_240x135.jpg?t=20151111100507" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+						<img src="images/ico_sh.png" alt="" class="mv-porpety">
+					</div>
+					<div>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-show">
+							<img src="http://img2.yytcdn.com/video/mv/151023/2400382/-M-88563651b4e4c14620dd6dd6d373d273_240x135.jpg?t=20151022232126" alt="" />			
+						</a>
+						<a href="http://v.yinyuetai.com/video/2335978" target="_blank" class="mv-play iconfont">&#xe6e8;</a>
+					</div>
+					<div>
+						<a href="#" class="mv-show mv-load">
+							<img src="images/loading.gif" alt="" />			
+						</a>
+					</div>
+				</div>				
+			</div>			
+		</div>
+		<a href="javascript:void(0)" class="mv-arrow-left mv-arrow"></a>
+		<a href="javascript:void(0)" class="mv-arrow-right mv-arrow"></a>
+	</div>		
+	<!--标签-->
+	<div class="label-wrap">
+		<div class="label-top top">
+			<h1 class="icon-music-tb">标签</h1>
+			<a href="#" class="pattern-more">更多<span>></span></a>
+		</div>
+		<div class="label-bot">
+			<ul class="label-list clearfix">
+				<li>
+					<a href="#" class="label-pic"><img src="images/sort_01.png" alt="" /></a>
+					<div class="item-wrap">
+						<a href="#">华语</a>
+						<a href="#" class="highlight">英语</a>
+						<a href="#">网络</a>
+						<a href="#">情歌</a>
+						<a href="#" class="highlight">韩语</a>
+						<a href="#">节日</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="label-pic"><img src="images/sort_02.png" alt="" /></a>
+					<div class="item-wrap">
+						<a href="#">思念</a>
+						<a href="#">伤感</a>
+						<a href="#" class="highlight">欢快</a>
+						<a href="#">安静</a>
+						<a href="#" class="highlight">甜蜜</a>
+						<a href="#">伤感</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="label-pic"><img src="images/sort_03.png" alt="" /></a>
+					<div class="item-wrap">
+						<a href="#">流行</a>
+						<a href="#" class="highlight">摇滚</a>
+						<a href="#">R&B</a>
+						<a href="#" class="highlight">舞曲</a>
+						<a href="#">电子</a>
+						<a href="#">嘻哈</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="label-pic"><img src="images/sort_04.png" alt="" /></a>
+					<div class="item-wrap">
+						<a href="#">休闲</a>
+						<a href="#">睡前</a>
+						<a href="#" class="highlight">旅行</a>
+						<a href="#">聚会</a>
+						<a href="#" class="highlight">开车</a>
+						<a href="#">约会</a>
+					</div>
+				</li>
+				<li>
+					<a href="#" class="label-pic"><img src="images/sort_05.png" alt="" /></a>
+					<div class="item-wrap">
+						<a href="#" class="highlight">90后</a>
+						<a href="#">80后</a>
+						<a href="#" class="highlight">游戏</a>
+						<a href="#">神曲</a>
+						<a href="#">70后</a>
+						<a href="#" class="highlight">动漫</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 直播间 -->
+	<div class="direct-wrap">
+		<div class="direct-top top">
+			<h1 class="icon-music-tb">直播间</h1>
+			<a href="#" class="pattern-more">更多<span>></span></a>
+		</div>
+		<div class="direct-bot">
+			<ul class="direct-list clearfix">
+				<li><a href="http://show.baidu.com/97205372?pst=musicsug" class="direct-link" target="_blank"><img src="http://vi1.6rooms.com/live/2015/07/01/20/1010v1435753182777047775_s.jpg" alt=""><span>直播中</span></a>
+				<p><a href="#">米果</a><span>774人</span></p>
+				</li>
+				<li><a href="http://show.baidu.com/97558729?pst=musicsug" class="direct-link" target="_blank"><img src="http://vi0.6rooms.com/live/2015/11/05/00/1010v1446653675694892277_s.jpg" alt=""><span>直播中</span></a>
+				<p><a href="#">新野梦</a><span>689人</span></p>
+				</li>
+				<li><a href="http://show.baidu.com/97651269?pst=musicsug" class="direct-link" target="_blank"><img src="http://vi3.6rooms.com/live/2015/10/17/10/1010v1445049861525747413_s.jpg" alt=""><span>直播中</span></a>
+				<p><a href="#">希诺</a><span>1234人</span></p>
+				</li>
+				<li><a href="http://show.baidu.com/96239039?pst=musicsug" class="direct-link" target="_blank"><img src="http://vi3.6rooms.com/live/2015/09/18/16/1010v1442564002822264312_s.jpg" alt=""><span>直播中</span></a>
+				<p><a href="#">S+糖果求升级</a><span>884人</span></p>
+				</li>
+				<li class="last"><a href="http://show.baidu.com/92020304?pst=musicsug" target="_blank" class="direct-link"><img src="http://vi1.6rooms.com/live/2015/10/17/23/1010v1445095816154294732_s.jpg" alt=""><span>直播中</span></a>
+				<p><a href="#">乱世~林茹雪</a><span>474人</span></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<footer>
+		<div class="footer">
+			<a href="#">意见反馈</a> | <a href="#">帮助中心</a> | <a href="#">资源合作开放平台</a> | <a href="#">原创音乐人</a> | <span>©2015 Baidu</span> <a href="#">使用melody前必读</a> <span>文网文[2010]197号</span>
+		</div>
+		<p class="connect-bot">
+			<a href="http://weibo.com/u/3381888390" target="_blank" class="wb gz">加关注</a>
+			<a href="#" class="wx gz">加微信好友</a>
+			<span class="ewm"></span>
+		</p>
+	</footer>
+	<!-- 返回顶部 -->
+	<a href="javascript:void(0)" class="returntop"></a>
+	<!-- 侧边播放器 -->
+	<div class="banner clearfix">
+		<div class="pic"><img src="images/1.jpg" alt="" width="90" height="90"></div>
+		<div class="txt">4 Walls</div>
+		<div class="but">
+			<a href="javascript:void(0);" class="prev"></a>
+			<a href="javascript:void(0);" class="play"></a>
+			<a href="javascript:void(0);" class="next"></a>
+		</div>
+		<div class="close"></div>
+	</div>
+	<audio src="mp3/4-walls.mp3" id="myMusic" loop></audio>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+.bor{
+	border: 1px solid red;
+}
+body{
+	background: #F2F2F2;
+}
+.zb_container{
+	width: 1000px;
+	margin: 40px auto 200px;
+	.zb_con{
+		display: none;
+		width: 100%;
+		height: 390px;
+		.zb-top{
+			width: 100%;
+			height: 40px;
+			position: relative;
+			h2{
+				font-size: 1.7em;
+				color: #FF986F;
+			}
+			h2.xq{
+				color: #FECF71;
+			}
+			h2.lp{
+				color: #BCE0EE;
+			}
+			h2.cj{
+				color: #B5D797;
+			}
+			h2.zt{
+				color: #80D99A;
+			}
+			a.more{
+				font-size: 0.8em;
+				color: #690;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				display: block;
+				line-height: 20px;
+				&:hover{
+					color: #f00;
+				}
+			}
+		}
+		.zb-bot{
+			width: 100%;
+			margin-top: 20px;
+			ul li{
+				float: left;
+				width: 200px;
+				margin-right: 65px;
+				div{
+					width: 100%;
+					height: 150px;
+					background: #fff;
+					margin-bottom: 25px;
+					a.pic{
+						display: block;
+						width: 200px;
+						height: 110px;
+						overflow: hidden;
+						img{
+							width: 200px;
+							height: 110px;
+							-webkit-transition: all 0.5s linear;
+							transition: all 0.5s linear;
+						}
+						&:hover img{
+							-webkit-transform: scale(1.1);
+							transform: scale(1.1);
+						}
+					}
+					p{
+						width: 100%;
+						line-height: 25px;
+						margin-top: 5px;
+						a.link{
+							float: left;
+							margin: 0 10px;
+							font-size: 1em;
+							color: #690;
+						}
+						span{
+							float: left;
+							font-size: 1em;
+							color: #999;
+						}
+					}
+				}
+				div.bottom{
+					margin-bottom: 0;
+				}
+			}
+			ul li.right{
+				margin-right: 0;
+			}
+		}
+	}
+	.zb_con.zb-active{
+		display: block;
+	}
+}
+#bottom_box{width:1000px;position:absolute;bottom:0;left:50%;text-align:center;margin-left: -500px;}
+#bottom_box span{width:100px;height:100px;display:inline-block;-webkit-transition:all .3s;transition:all .3s;border-radius:50%;cursor:pointer;}
+#bottom_box span img{width:100%;height: 100%;border-radius:50%;}
+#bottom_box span:hover{
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
+	width: 150px;
+	height: 150px;
+}

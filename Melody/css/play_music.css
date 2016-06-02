@@ -1,0 +1,160 @@
+.bor {
+  border: 1px solid red;
+}
+body {
+  background: url(../images/bg_play.jpg) no-repeat;
+  background-size: cover;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.play_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+}
+.play_container .play-wrap {
+  width: 1000px;
+  margin: 150px auto 0;
+}
+#Music {
+  float: left;
+  width: 370px;
+  box-shadow: 0 0 10px #000;
+  margin-right: 20px;
+}
+#Music .Txt {
+  width: 370px;
+}
+#Music .Txt .title {
+  width: 370px;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  font-family: "Microsoft yahei";
+  background: #f16d6e;
+}
+#Music .Txt ul {
+  width: 100%;
+  height: 370px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#Music .Txt ul li {
+  width: 370px;
+  height: 41px;
+  line-height: 41px;
+  list-style: none;
+  background: url("../images/bg4.png");
+  font-size: 14px;
+  font-family: "Microsoft yahei";
+}
+#Music .Txt ul li a {
+  color: #7e868e;
+  text-decoration: none;
+  text-indent: 30px;
+  display: block;
+  /*自动可以继承li的宽高*/
+  height: 40px;
+  /*设置高度是为了让下面的底边框显示*/
+  background: url("../images/play.png") no-repeat 10px 13px;
+}
+#Music .Txt ul li a:hover {
+  color: #fff;
+}
+#Music .Txt ul li.active a {
+  color: #fff;
+  border-bottom: 1px solid #f16d6e;
+  background: url("../images/pause.png") no-repeat 10px 13px;
+}
+#Music1 {
+  width: 610px;
+  height: 430px;
+  float: left;
+}
+#Music1 .left {
+  width: 260px;
+  height: 430px;
+  float: left;
+  background: #fff;
+}
+#Music1 .right {
+  width: 350px;
+  height: 430px;
+  float: right;
+  background: rgba(0, 0, 0, 0.5);
+}
+#Music1 .left img.xpic {
+  margin: 15px auto;
+  display: block;
+}
+#Music1 .left h3 {
+  text-indent: 20px;
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+#Music1 .left p {
+  line-height: 20px;
+  font-size: 14px;
+  text-indent: 20px;
+}
+#Music1 .left .btnPlay {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background: #05A815;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1em;
+  margin: 20px;
+  cursor: pointer;
+}
+#Music1 .left .bar {
+  width: 240px;
+  height: 3px;
+  margin: 0 auto;
+  background: #ddd;
+  position: relative;
+}
+#Music1 .left .bar .barBlue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: blue;
+  width: 0;
+  height: 3px;
+}
+.right .rightCon {
+  width: 290px;
+  height: 370px;
+  margin: 30px auto;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ccc;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: #797b7e;
+  border-radius: 100%;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+.right .rightCon p {
+  line-height: 25px;
+  text-align: center;
+}
+#gc {
+  display: none;
+}
+.hover {
+  color: #f00;
+  font-size: 20px;
+}

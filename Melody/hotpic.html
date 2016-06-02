@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>热图</title>
+		<link rel="stylesheet" href="css/basic.css"/>
+		<link rel="stylesheet" href="css/nav.css"/>
+		<link rel="stylesheet" href="css/footer.css"/>
+		<link rel="stylesheet" href="css/hotpic.css">
+		<style type="text/css" id="css">
+		</style>
+	</head>
+	<body>
+		<!-- 导航部分 -->
+		<nav>
+			<div class="nav">
+				<div class="menu">
+					<ul class="clearfix">
+						<li data-Name="do"><a href="index.html">首页</a><span></span></li>					
+						<li data-Name="re"><a href="bd.html">榜单</a><span></span></li>
+						<li data-Name="mi"><a href="hotpic.html">热图</a><span></span></li>
+						<li data-Name="fa"><a href="zb.html">直播</a><span></span></li>
+						<li data-Name="sol"><a href="fun.html">乐了趣</a><span></span></li>
+						<li data-Name="la"><a href="play_music.html">播放器</a><span></span></li>
+						<li data-Name="si" class="mv-new">
+							<a href="mv.html">MV</a>
+							<span></span>
+							<img src="images/topbar-new.png" alt=""/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 大图滚动部分 -->
+		<div id="banner">
+			<ul class="clearfix" id="pic">
+			</ul>
+			<ol class="clearfix" id="btn">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ol>
+		</div>
+		<!-- 照片展示部分 -->
+		<div class="show-container">
+			<h3>新图.热图欣赏</h3>
+			<ul class="show-list clearfix">
+				<li>
+					<div class="row-one">
+						<img src="images/show-1.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-one">
+						<img src="images/show-2.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-one">
+						<img src="images/show-3.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-one">
+						<img src="images/show-4.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-one">
+						<img src="images/show-5.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="row-two">
+						<img src="images/show-7.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-two">
+						<img src="images/show-23.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-two">
+						<img src="images/show-21.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-two">
+						<img src="images/show-10.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="row-three">
+						<img src="images/show-11.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-three">
+						<img src="images/show-12.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-three">
+						<img src="images/show-13.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-three">
+						<img src="images/show-14.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-three">
+						<img src="images/show-20.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+				</li>
+				<li>
+					<div class="row-four">
+						<img src="images/show-15.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-four">
+						<img src="images/show-16.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-four">
+						<img src="images/show-17.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-four">
+						<img src="images/show-18.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+					<div class="row-four">
+						<img src="images/show-19.jpg" alt="">
+						<p class="like clearfix"><i></i><span>张艺兴</span></p>
+					</div>
+				</li>
+			</ul>
+			<div class="jz">加载更多</div>
+		</div>
+		<!--导航音乐键-->
+		<div style="display:none">
+			<audio src="mp3/do.mp3" controls="controls" id="MusicAudio"></audio>
+		</div>
+		<!-- 收藏栏 -->
+		<div id="carBar" style="z-index:999">	
+			<div class="carTxt">
+				<ul>
+				
+				</ul>
+			</div>
+			<div class="car">
+				<span class="join">收藏区</span>
+			</div>
+		</div>
+		<div id="tip">收藏成功</div>
+		<!-- 底部 -->
+		<footer>
+			<div class="footer">
+				<a href="#">意见反馈</a> | <a href="#">帮助中心</a> | <a href="#">资源合作开放平台</a> | <a href="#">原创音乐人</a> | <span>©2015 Baidu</span> <a href="#">使用melody前必读</a> <span>文网文[2010]197号</span>
+			</div>
+			<p class="connect-bot">
+				<a href="http://weibo.com/u/3381888390" target="_blank" class="wb gz">加关注</a>
+				<a href="#" class="wx gz">加微信好友</a>
+				<span class="ewm"></span>
+			</p>
+		</footer>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.fly.min.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="js/hotpic.js"></script>
+	</body>
+</html>
